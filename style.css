@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(#73b47a, #BDF6FF, rgb(255, 240, 156));
+    background: linear-gradient(#73b47a, #BDF6FF, rgb(159, 140, 204));
 }
 
 * { margin: 0; padding: 0; }  /* reset margin and padding */
@@ -172,17 +172,17 @@ a, a:hover, a:focus, a:active {
     height: fit-content;
     width: 300px;
     margin: 30px 15px 0px 15px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 .project-frame:hover {
     transform: scale(1.05, 1.05);
-    box-shadow: 0px 5px 5px 5px rgb(121, 153, 138);
+    box-shadow: 0px 5px 5px 5px rgb(83, 105, 95);
 }
 
 .project-photo {
     width: 300px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 10px 10px var(--purple);
 }
 
@@ -206,42 +206,12 @@ a, a:hover, a:focus, a:active {
     transform: scale(1.10, 1.10);
 }
 
-
-#form-wrapper {
-    background-color: var(--purple);
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 80px;
-}
-
-.input-box {
-    width: 800px;
-    height: 35px;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 25px;
-}
-
-.input-text-setting {
-    color: black;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-}
-
 .message-box-setting {
     text-justify: auto;
     border: none;
     border-radius: 10px;
     width: 800px;
     height: 100px;
-}
-
-.send-button {
-    justify-content: center;
 }
 
 .center {
@@ -275,13 +245,8 @@ a, a:hover, a:focus, a:active {
 
 
 @media (max-width: 1100px) {
-    .projects-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .project-frame {
-        width: 350px;
+    #projects-wrapper {
+        grid-template-columns: auto auto;
     }
 }
 
@@ -290,13 +255,6 @@ a, a:hover, a:focus, a:active {
         width: auto;
         margin-left: 80px;
         margin-right: 80px;
-    }
-    .input-box {
-        width: 600px;
-    }
-    .message-box-setting {
-        width: 600px;
-        height: 160px;
     }
 }
 
@@ -335,12 +293,10 @@ a, a:hover, a:focus, a:active {
     .text {
         font-size: 20px;
     }
-    .input-box {
-        width: 500px;
-    }
-    .message-box-setting {
-        width: 500px;
-        height: 170px;
+    #projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -364,12 +320,5 @@ a, a:hover, a:focus, a:active {
     }
     .text {
         font-size: 18px;
-    }
-    .input-box {
-        width: 400px;
-    }
-    .message-box-setting {
-        width: 400px;
-        height: 180px;
     }
 }
