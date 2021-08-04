@@ -173,6 +173,10 @@ a, a:hover, a:focus, a:active {
     border-color: var(--purple);
 }
 
+.school-name {
+    font-size: 35px;
+}
+
 .school-description {
     border-color: var(--dark-purple);
     border-width: 7px 0px 0px 0px;
@@ -314,6 +318,12 @@ a, a:hover, a:focus, a:active {
         margin-left: 40px;
         margin-right: 40px;
     }
+    .school-name {
+        font-size: 28px;
+    }
+    .school-description {
+        width: 330px;
+    }
     .text {
         font-size: 20px;
     }
@@ -353,6 +363,9 @@ a, a:hover, a:focus, a:active {
     }
     .school {
         width: 190px;
+    }
+    .school-description {
+        width: 250px;
     }
     .text {
         font-size: 18px;
