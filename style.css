@@ -8,7 +8,20 @@
 }
 
 body {
-    background: linear-gradient(#73b47a, #BDF6FF, rgb(159, 140, 204));
+    background: linear-gradient(135deg, #d38ca1, #f19da8, #BDF6FF, rgb(147, 120, 211), rgb(135, 117, 177));
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 * { margin: 0; padding: 0; }  /* reset margin and padding */
@@ -96,11 +109,12 @@ a, a:hover, a:focus, a:active {
 
 .self-intro {
     background-color: var(--light-orange);
-    padding: 40px;
+    padding: 50px 50px 50px 50px;
     border-radius: 20px;
     box-shadow: 15px 15px var(--purple);
-    padding-top: 20px;
-    width: 800px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 150px 0px 150px;
     text-align: justify;
 }
 
@@ -129,8 +143,8 @@ a, a:hover, a:focus, a:active {
 }
 
 #education-wraper {
-    margin-top: 10px;
-    margin-bottom: 70px;
+    margin-top: 130px;
+    margin-bottom: 200px;
     height: 350px;
     width: auto;
     display: flex;
@@ -140,22 +154,32 @@ a, a:hover, a:focus, a:active {
 
 #school-photo-container {
     width: 800px;
-    display: flex;
-    flex-direction: row;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-evenly;
 }
 
 .school {
-    margin: 0;
+    margin-top: 20px;
     width: 260px;
     width: 260px;
     border-color: var(--light-orange);
     border-width: 13px;
     border-style: solid;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 .school:hover {
     border-color: var(--purple);
+}
+
+.school-description {
+    border-color: var(--dark-purple);
+    border-width: 7px 0px 0px 0px;
+    border-style: solid;
+    margin-top: 40px;
+    padding: 0px 0px 20px 20px;
+    width: 400px;
 }
 
 #projects-wrapper {
