@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Otomanopee+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Teko&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a9cfebec94.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
     </head> 
 
 
@@ -24,12 +25,12 @@
         <div class="center"><h1 class="headline shake">Hey! It's Luan <span class="wave"> 👋 </span></h1></div>
 
         <div class="center">
-            <div class="center"><img class="avatar" src="https://drive.google.com/uc?id=1LtrWdq1-TB6O7T1RVoQSvzzDerlVTF6U"></div>
+            <div class="center"><img class="avatar" src="./images/avatar.png"></div>
             <div class="medias">
                 <a href="https://github.com/truongluan303" target="_blank" class="fa fa-github media-icon"></a>
                 <a href="https://www.linkedin.com/in/hoangphucluantruong0812/" target="_blank" class="fa fa-linkedin media-icon"></a>
-                <a href="https://www.reddit.com/user/HeyitsLou2303" class="fa fa-reddit media-icon" target="_blank"></a>
-                <a href="https://www.quora.com/profile/Luan-Truong-34" target="_blank" class="fa fa-quora media-icon"></a>
+                <a href="https://www.hackerrank.com/truongluan303" class="fab fa-hackerrank media-icon" target="_blank"></a>
+                <a href="https://www.quora.com/profile/Luan-Truong-34" target="_blank" class="fab fa-quora media-icon"></a>
             </div>
         </div>
         
@@ -38,40 +39,54 @@
         <div class="center">
             <div class="self-intro"> 
                 <p class="text">
-                    I am a 19 year old Computer Science student living in Silicone Valley.
+                    I am a 19 year-old Computer Science student living in Silicone Valley.
                     I graduated from De Anza College as a Mathematic major in 2021
                     and transfered to San José State University to pursue a Computer Science degree.
                     <br>
-                    I am open to any Software Engineering internship or externship
+                    I am open to any Software Engineering internship or externship roles that give me
+                    opportunities to learn and gain hands-on experience.
+                    <br><br>
                 </p>
+                <p class="bigger-text center" style="font-size: 30px;">Languages and Technologies:</p>
+                <div id="#lang-and-tech" class="center" style="gap: 15px;">
+                    <img src="https://img.icons8.com/dusk/60/000000/python.png"/>
+                    <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo--v1.png"/>
+                    <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png"/>
+                    <img src="https://img.icons8.com/ios-glyphs/60/000000/html-5.png"/>
+                    <img src="https://img.icons8.com/ios-glyphs/60/000000/css3.png"/>
+                    <img src="https://img.icons8.com/ios-glyphs/60/000000/javascript.png"/>
+                    <img src="https://img.icons8.com/ios-glyphs/60/000000/console.png"/>
+                    <img src="https://img.icons8.com/ios-glyphs/60/000000/x86.png"/>
+                </div>
             </div>
         </div>
 
-
-        <p id="education" class="bigger-text center" style="margin-top: 90px; color: rgb(29, 15, 44)">Education</p>
-        <div id="education-wraper">
-            <div id="school-photo-container">
-                <a href="http://www.deanza.edu/" target="_blank"><img class="school" 
-                    src="https://drive.google.com/uc?id=1rHLGrWqeShSiyKkn7xsGCwuQJlMzAv8-"></a>
-                <div class="school-description">
-                    <p class="bigger-text school-name"> DE ANZA COLLEGE</p>
-                    <p class="text">
-                        2019 - 2021 <br><br>
-                        Degrees Type: Associate in Science <br>
-                        Major: Mathematics <br>
-                        GPA: 3.94<br>
-                    </p>
-                </div>
-                <a href="https://www.sjsu.edu/" target="_blank"><img class="school"
-                    src="https://drive.google.com/uc?id=15eYH2IzMYDqHNM-GVyw6DrIdSPpxyjfT"></a>
-                <div class="school-description">
-                    <p class="bigger-text school-name"> SAN JOSE STATE UNIVERSITY</p>
-                    <p class="text">
-                        2021 - 2023 (Estimate) <br><br>
-                        Degree Type: Bachelor's in Science <br>
-                        Major: Computer Science <br>
-                        GPA: 3.94
-                    </p>
+        <div id="education">
+            <p class="bigger-text center">Education</p>
+            <div id="education-wraper">
+                <div id="school-photo-container">
+                    <a href="https://www.sjsu.edu/" target="_blank"><img class="school"
+                        src="./images/sjsu.png"></a>
+                    <div class="school-description">
+                        <p class="bigger-text school-name"> SAN JOSE STATE UNIVERSITY</p>
+                        <p class="text">
+                            2021 - 2023 (Estimate) <br><br>
+                            Degree Type: Bachelor's in Science <br>
+                            Major: Computer Science <br>
+                            GPA: 3.94
+                        </p>
+                    </div>
+                    <a href="http://www.deanza.edu/" target="_blank"><img class="school" 
+                        src="./images/DeAnza.png"></a>
+                    <div class="school-description">
+                        <p class="bigger-text school-name"> DE ANZA COLLEGE</p>
+                        <p class="text">
+                            2019 - 2021 <br><br>
+                            Degrees Type: Associate in Science <br>
+                            Major: Mathematics <br>
+                            GPA: 3.95
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,8 +95,8 @@
         <p id="projects" class="bigger-text center" style="color: rgb(29, 15, 44)">Projects</p>
 
         <div id="projects-wrapper" class="center">
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1vJgU2ick0YTeCpce-ZiekGIH-z2SG50g">
+            <div class="center project-frame" onclick="openInfo(1)">
+                <img class="project-photo" src="./images/pathfinding-screenshot.png">
                 <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
                     Pathfinding Algorithms Visualizer 
                     <i class="fab fa-python"></i>
@@ -90,12 +105,10 @@
                     A visualizer for path finding algorithms including A*, Dijkstra, 
                     Breadth-First Search, and Depth-First Search.
                 </p>
-                <a href="https://github.com/truongluan303/Pathfinding-and-Sorting-Algorithms-Visualizer" target="_blank">
-                    <button class="button bigger-text">To Github</button>
-                </a>
             </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1apDudZyTzNkUtc7tQh2Q-g1gEYl3Ugx7">
+
+            <div class="center project-frame" onclick="openInfo(2)">
+                <img class="project-photo" src="./images/sorting-screenshot.png">
                 <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
                     Sorting Algorithms Visualizer 
                     <i class="fab fa-python"></i>
@@ -104,12 +117,10 @@
                     A visualizer for many sorting algorithms including Quick Sort, Insertion Sort, 
                     Selection Sort, Bubble Sort, and Merge Sort.
                 </p>
-                <a href="https://github.com/truongluan303/Pathfinding-and-Sorting-Algorithms-Visualizer" target="_blank">
-                    <button class="button bigger-text">To Github</button>
-                </a>
             </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1xc0Fiei3AcWGhqWqqBBGia-0E3tKT2jt">
+
+            <div class="center project-frame" onclick="openInfo(3)">
+                <img class="project-photo" src="./images/social-media-screenshot.png">
                 <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
                     Social Media on Terminal
                     <i class="fab fa-java" style="font-weight: bold"></i>
@@ -118,12 +129,10 @@
                     A simple social media on the terminal. The users can create account,
                     log in, find people and make friends with each other.
                 </p>
-                <a href="https://github.com/truongluan303/Simple-Social-Media" target="_blank">
-                    <button class="button bigger-text">To Github</button>
-                </a>
             </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1yjrbrTTWwmZYt_hzvJ2HIBuBWVxw4BoR">
+
+            <div class="center project-frame" onclick="openInfo(4)">
+                <img class="project-photo" src="./images/tictactoe-screenshot.png">
                 <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
                     Tic Tac Toe with Unbeatable Bot
                     <i class="fab fa-java" style="font-weight: bold"></i>
@@ -132,12 +141,10 @@
                     A Tic Tac Toe game that allows user to play with another player 
                     or with an unbeatable AI.
                 </p>
-                <a href="https://github.com/truongluan303/Tic-Tac-Toe-Game" target="_blank">
-                    <button class="button bigger-text">To Github</button>
-                </a>
             </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1GNFHFIO4TXIO4eBPUrvWstj8mu72z4rK">
+
+            <div class="center project-frame" onclick="openInfo(5)">
+                <img class="project-photo" src="./images/sudoku-screenshot.png">
                 <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
                     Sudoku Puzzles Solver
                     <i class="fab fa-java" style="font-weight: bold"></i>
@@ -145,27 +152,38 @@
                 <p class="text project-description">
                     Solve a user-input Sudoku using backtracing algorithm.
                 </p>
-                <a href="https://github.com/truongluan303/Sudoku_Solver" target="_blank">
-                    <button class="button bigger-text">To Github</button>
-                </a>
             </div>
-            <div target="_blank" class="center project-frame">
-                <img class="project-photo" src="https://drive.google.com/uc?id=1wiKQzMtttX1SMk-LUyq1JWs9fLCHVoS0">
+
+            <div class="center project-frame" onclick="openInfo(6)">
+                <img class="project-photo" src="./images/music-player.png">
                 <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Pi Estimate with Visualizer
+                    Music Player and Downloader
                     <i class="fab fa-python"></i>
                 </p>
                 <p class="text project-description">
                     A program that visualizes and estimates the value of Pi using the Monte Carlo method.
                 </p>
-                <a href="https://github.com/truongluan303/Pi_Estimate" target="_blank">
-                    <button class="button bigger-text">To Github</button>
-                </a>
             </div>
         </div>
-        <a class="center" style="margin-top: 35px;" href="https://github.com/truongluan303" target="_blank">
-            <button class="button bigger-text" style="width: 250px; margin-bottom: 150px">Show More Projects</button>
-        </a>
+
+        <div id="proj-info">
+            <div id="proj-buttons" style="margin: 10px 0px 0px 10px;">
+                <button class="bigger-text button" onclick="closeInfo()" style="margin-right: 10px;">BACK</button>
+                <button id="to-github-button" class="button bigger-text" onclick="toGithub()">To Github</button>
+            </div>
+            <div style="margin: 30px 40vw 30px 50px;">
+                <div>
+                <p id="proj-title" class="bigger-text"></p>
+                <p id="proj-content" class="text"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <button class="button bigger-text" style="width: 250px; margin-bottom: 100px; margin-top: 30px;">
+                <a href="https://github.com/truongluan303" target=_blank>Show More</a>
+            </button>
+        </div>
     </body>
 
 </html>
