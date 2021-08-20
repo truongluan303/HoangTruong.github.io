@@ -8,9 +8,14 @@
 }
 
 body {
-    background: linear-gradient(135deg, #d38ca1, #f19da8, #BDF6FF, rgb(147, 120, 211), rgb(135, 117, 177));
+    background-color: #0d5077;
+    background-image: linear-gradient(315deg, #073a7c,#4085d4, #baf5de);
+}
+
+body {
+    background: linear-gradient(135deg, #e698b0, #fd9ba8, #8bccd6, #073a7c, #073a7c);
     background-size: 200% 200%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 7s ease infinite;
 }
 @keyframes gradient {
     0% {
@@ -23,6 +28,7 @@ body {
         background-position: 0% 50%;
     }
 }
+
 
 * { margin: 0; padding: 0; }  /* reset margin and padding */
 
@@ -59,6 +65,7 @@ a, a:hover, a:focus, a:active {
     font-family: 'Anton', sans-serif;
     font-size: 20px;
     color: var(--dark-purple);
+    transition: 0.3s;
 }
 .nav-link:hover {
     color: var(--purple)
@@ -124,6 +131,7 @@ a, a:hover, a:focus, a:active {
     text-align: center;
     text-decoration: none;
     color: var(--purple);
+    transition: 0.3s;
 }
 .media-icon:hover {
     color: var(--dark-purple);
@@ -135,11 +143,20 @@ a, a:hover, a:focus, a:active {
     font-size: 24px;
 }
 
+
 .bigger-text {
     font-family: 'Teko', sans-serif;
     font-weight: bold;
     font-size: 45px;
     margin-bottom: 10px;
+}
+
+#education {
+    background-color: rgb(0, 0, 0, 0.1);
+    margin-top: 90px;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: black;
 }
 
 #education-wraper {
@@ -168,9 +185,11 @@ a, a:hover, a:focus, a:active {
     border-width: 13px;
     border-style: solid;
     border-radius: 10%;
+    transition: 0.5s;
 }
 .school:hover {
-    border-color: var(--purple);
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fcf599, 0 0 30px #fcf599, 0 0 40px #fcf599, 0 0 50px #fcf599;
 }
 
 .school-name {
@@ -179,11 +198,15 @@ a, a:hover, a:focus, a:active {
 
 .school-description {
     border-color: var(--dark-purple);
-    border-width: 7px 0px 0px 0px;
+    border-width: 8px 0px 0px 0px;
     border-style: solid;
+    border-radius: 0px 0px 40px 40px;
     margin-top: 40px;
-    padding: 0px 0px 20px 20px;
+    margin-left: 10px;
+    padding: 10px 0px 30px 20px;
     width: 400px;
+    height: fit-content;
+    background-color: rgb(255, 255, 255, 0.4);
 }
 
 #projects-wrapper {
@@ -197,21 +220,20 @@ a, a:hover, a:focus, a:active {
     flex-wrap: wrap;
     flex-direction: column;
     background-color: var(--light-orange);
-    padding: 20px;
-    width: 300px;
+    width: 330px;
+    transition: 0.3s;
     margin: 30px 15px 0px 15px;
+    padding-bottom: 15px;
     border-radius: 30px;
 }
 .project-frame:hover {
-    transform: scale(1.05, 1.05);
-    box-shadow: 0px 5px 5px 5px rgb(83, 105, 95);
+    transform: scale(1.07, 1.07);
 }
 
 .project-photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 30px;
-    box-shadow: 10px 10px var(--purple);
+    width: 330px;
+    height: 330px;
+    border-radius: 30px 30px 0px 0px;
 }
 
 .project-description {
@@ -219,6 +241,22 @@ a, a:hover, a:focus, a:active {
     text-align: left;
     font-size: 18px;  
     margin: 10px 20px 0px 20px;
+    padding: 0px 10px 0px 10px;
+}
+
+
+#proj-info {
+    background: linear-gradient(to left, var(--transparent), rgba(255, 255, 255, 0.4),white, white, white, white);
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .button {
