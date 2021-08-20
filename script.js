@@ -1,3 +1,12 @@
+const PROJECT_TITLES = [
+  "PATHFINDING ALGORITHMS VISUALIZER",
+  "SORTING ALGORITHMS VISUALIZER",
+  "SOCIAL MEDIA ON TERMINAL",
+  "TIC TAC TOE AI",
+  "SUDOKU SOLVER",
+  "MUSIC PLAYER AND DOWNLOADER"
+]
+
 const GITHUB_LINKS = [
   "https://github.com/truongluan303/Pathfinding-and-Sorting-Algorithms-Visualizer",
   "https://github.com/truongluan303/Pathfinding-and-Sorting-Algorithms-Visualizer",
@@ -8,6 +17,8 @@ const GITHUB_LINKS = [
 ]
 let linkIndex;
 
+
+
 // read from the file and add the text to the html element
 function insertText(filepath, id) {
   let element = document.getElementById(id);
@@ -17,28 +28,35 @@ function insertText(filepath, id) {
 }
 
 
+
 function openInfo(num) {
-  const text = './files/projects/proj' + num + '.html';
-  const title = './files/projects/title' + num + '.txt';
-  insertText(title, 'proj-title');
+  document.getElementById('proj-title').innerHTML += PROJECT_TITLES[num - 1];
+
+  let text = './files/projects/proj' + num + '.html';
   insertText(text, 'proj-content');
+
   // show the buttons
   document.getElementById('proj-buttons').style.display = 'block';
   document.getElementById('proj-info').style.width = '100%';
+
   // set the link index with the corresponding project number
   linkIndex = num - 1;
 }
 
 
+
 function closeInfo() {
   // hide the buttons
   document.getElementById('proj-buttons').style.display = 'none';
+
   // delete the text
   document.getElementById('proj-title').innerHTML = '';
   document.getElementById('proj-content').innerHTML = '';
+
   // set the size to 0
   document.getElementById('proj-info').style.width = '0';
 }
+
 
 
 function toGithub() {
