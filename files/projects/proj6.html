@@ -8,26 +8,26 @@ The two main libraries that this program use are youtube-dl (to download song fr
 be installed at the very first time the program is run so the user does not need to install anything. 
 
 <br><br>
-Demo Run:
-<br><br>
+<h3>Demo Run:</h3>
+<br>
 <iframe src="https://drive.google.com/file/d/13eUvUQsqqAevn0LCNtWKjSdem0SIegWM/preview" width="640" height="480" allow="autoplay"></iframe>
 <br><br>
 
 
 <br><br>
-Screen Shots:
-<br><br>
+<h3>Screenshots:</h3>
+<br>
 <img src="https://user-images.githubusercontent.com/83048295/130008738-74829540-7792-4f89-baf0-b407d35894ef.png" style="width: 600px;">
 <br><br>
 <img src="https://user-images.githubusercontent.com/83048295/130008743-2bcb0829-09ff-4b51-8bdf-a9e1509d51ed.png" style="width:600px;">
 
 
 <br><br><br>
-How did I implement this program?
-<br><br>
+<h3>How did I implement this program?</h3>
+<br>
 
 This program can be seperated into two main parts, the song downloader and the song player.
-
+<br><br>
 For the song downloader, the program simply use the user's input of the song's name and artist as the search query for youtube searching. Then the program will download the very first result found since it will most likely be the best match for the song that the user wants to download.
-
+<br><br>
 For the music player, as mentioned above, it is implemented using a circular doubly linked list. This data structure will allow us to move in both forward and backward directions. And when we encounter the end of the songs list, it will continue at the beginning of the song list. The music player is a class inherited from the circular doubly lined list class and will have all basic features of a music player such as play/pause, to next song, to previous song, delete a song from playlist, etc. 

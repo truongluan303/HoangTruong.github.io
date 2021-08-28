@@ -246,8 +246,10 @@ a, a:hover, a:focus, a:active {
 
 
 #proj-info {
-    background: linear-gradient(to left, var(--transparent), rgba(255, 255, 255, 0.4),white, white, white, white);
-    height: 100%;
+    background-color: rgb(233, 233, 233);
+    z-index: 1;
+    margin: 10vh 0 10vh 0;
+    height: 80vh;
     width: 0;
     position: fixed;
     z-index: 1;
