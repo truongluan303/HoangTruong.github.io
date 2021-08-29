@@ -1,6 +1,6 @@
 <html lang="en">
     <head>
-        <title> Luan Truong </title>
+        <title> Luan Truong | Computer Science student at SJSU </title>
         <link rel = "icon" href = "images/L-letter.png" type = "image/x-icon">
         <link rel="styleSheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,57 +16,63 @@
 
 
     <body>
-        <header id="header">
-            <nav id="nav-bar">
-                <div id="link-wrapper">
-                    <a href="#about-me" class="nav-link">ABOUT ME</a>
-                    <a href="#education" class="nav-link">EDUCATION</a>
-                    <a href="#projects" class="nav-link">PROJECTS</a>
-                </div>
-            </nav>
-        </header>
-
-
-        <div class="center"><h1 class="headline shake">Hey! It's Luan <span class="wave"> 👋 </span></h1></div>
-
-        <div class="center">
-            <div class="center"><img class="avatar" src="./images/avatar.png"></div>
-            <div class="medias">
-                <a href="https://github.com/truongluan303" target="_blank" class="fa fa-github media-icon"></a>
-                <a href="https://www.linkedin.com/in/hoangphucluantruong0812/" target="_blank" class="fa fa-linkedin media-icon"></a>
-                <a href="https://www.hackerrank.com/truongluan303" class="fab fa-hackerrank media-icon" target="_blank"></a>
-                <a href="https://codepen.io/truongluan303" target="_blank" class="fab fa-codepen media-icon"></a>
+        <nav id="nav-bar">
+            <i class="fas fa-window-close close-button" onclick="closeNav()"></i>
+            <div id="link-wrapper">
+                <a href="#about-me" class="nav-link">ABOUT ME</a>
+                <a href="#education" class="nav-link">EDUCATION</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="mailto:truongluan303@gmail.com" class="nav-link">CONTACT</a>
             </div>
-        </div>
-        
-        
-        <p id="about-me" class="bigger-text center" style="margin-top: 90px; color: rgb(29, 15, 44);">About Me</p>
-        <div class="center">
-            <div class="self-intro"> 
-                <p class="text">
-                    I am a 19 year-old Computer Science student living in Silicone Valley.
-                    I graduated from De Anza College as a Mathematic major in 2021
-                    and transfered to San José State University to pursue a Computer Science degree.
-                    <br>
-                    I am open to any Software Engineering internship or externship roles that give me
-                    opportunities to learn and gain hands-on experience.
-                    <br><br>
-                </p>
-                <p class="bigger-text center" style="font-size: 30px;">Languages and Technologies:</p>
-                <div id="#lang-and-tech" class="center" style="gap: 15px;">
-                    <img src="https://img.icons8.com/dusk/60/000000/python.png"/>
-                    <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo--v1.png"/>
-                    <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png"/>
-                    <img src="https://img.icons8.com/ios-glyphs/60/000000/html-5.png"/>
-                    <img src="https://img.icons8.com/ios-glyphs/60/000000/css3.png"/>
-                    <img src="https://img.icons8.com/ios-glyphs/60/000000/javascript.png"/>
-                    <img src="https://img.icons8.com/ios-glyphs/60/000000/console.png"/>
-                    <img src="https://img.icons8.com/ios-glyphs/60/000000/x86.png"/>
+        </nav>
+
+        <i class="fas fa-bars menu-button" onclick="openNav()"></i>
+
+        <section id="welcome">
+            <div class="center"><h1 class="headline shake">Hey! It's Luan <span class="wave"> 👋 </span></h1></div>
+
+            <div class="center">
+                <div class="center"><img class="avatar" src="./images/avatar.png"></div>
+                <div class="medias">
+                    <a href="https://github.com/truongluan303" target="_blank" class="fa fa-github media-icon"></a>
+                    <a href="https://www.linkedin.com/in/hoangphucluantruong0812/" target="_blank" class="fa fa-linkedin media-icon"></a>
+                    <a href="https://www.hackerrank.com/truongluan303" class="fab fa-hackerrank media-icon" target="_blank"></a>
+                    <a href="https://codepen.io/truongluan303" target="_blank" class="fab fa-codepen media-icon"></a>
                 </div>
             </div>
-        </div>
+        </section>
+        
+        
+        <section id="about-me">
+            <p class="bigger-text center" style="margin-top: 90px; color: rgb(29, 15, 44);">About Me</p>
+            <div class="center">
+                <div class="self-intro"> 
+                    <p class="text">
+                        I am a 19 year-old Computer Science student living in Silicone Valley.
+                        I graduated from De Anza College as a Mathematic major in 2021
+                        and transfered to San José State University to pursue a Computer Science degree.
+                        <br>
+                        I am open to any Software Engineering internship or externship roles that give me
+                        opportunities to learn and gain hands-on experience.
+                        <br><br>
+                    </p>
+                    <p class="bigger-text center" style="font-size: 30px;">Languages and Technologies:</p>
+                    <div id="#lang-and-tech" class="center" style="gap: 15px;">
+                        <img src="https://img.icons8.com/dusk/60/000000/python.png"/>
+                        <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo--v1.png"/>
+                        <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png"/>
+                        <img src="https://img.icons8.com/ios-glyphs/60/000000/html-5.png"/>
+                        <img src="https://img.icons8.com/ios-glyphs/60/000000/css3.png"/>
+                        <img src="https://img.icons8.com/ios-glyphs/60/000000/javascript.png"/>
+                        <img src="https://img.icons8.com/ios-glyphs/60/000000/console.png"/>
+                        <img src="https://img.icons8.com/ios-glyphs/60/000000/x86.png"/>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div id="education">
+
+        <section id="education" style="padding: 50px 0 30px 0;">
             <p class="bigger-text center">Education</p>
             <div id="education-wraper">
                 <div id="school-photo-container">
@@ -94,82 +100,89 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
 
-        <p id="projects" class="bigger-text center" style="color: rgb(29, 15, 44)">Projects</p>
+        <section id="projects" style="padding: 50px 0 30px 0;">
+            <p class="bigger-text center" style="color: rgb(29, 15, 44)">Projects</p>
 
-        <div id="projects-wrapper" class="center">
-            <div class="center project-frame" onclick="openInfo(1)">
-                <img class="project-photo" src="./images/pathfinding-screenshot.png">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Pathfinding Algorithms Visualizer 
-                    <i class="fab fa-python"></i>
-                </p>
-                <p class="text project-description">
-                    A visualizer for path finding algorithms including A*, Dijkstra, 
-                    Breadth-First Search, and Depth-First Search.
-                </p>
+            <div id="projects-wrapper" class="center">
+                <div class="center project-frame" onclick="openInfo(1)">
+                    <img class="project-photo" src="./images/pathfinding-screenshot.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Pathfinding Algorithms Visualizer 
+                        <i class="fab fa-python"></i>
+                    </p>
+                    <p class="text project-description">
+                        A visualizer for path finding algorithms including A*, Dijkstra, 
+                        Breadth-First Search, and Depth-First Search.
+                    </p>
+                </div>
+
+                <div class="center project-frame" onclick="openInfo(2)">
+                    <img class="project-photo" src="./images/sorting-screenshot.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Sorting Algorithms Visualizer 
+                        <i class="fab fa-python"></i>
+                    </p>
+                    <p class="text project-description">
+                        A visualizer for many sorting algorithms including Quick Sort, Insertion Sort, 
+                        Selection Sort, Bubble Sort, and Merge Sort.
+                    </p>
+                </div>
+
+                <div class="center project-frame" onclick="openInfo(3)">
+                    <img class="project-photo" src="./images/social-media-screenshot.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Social Media on Terminal
+                        <i class="fab fa-java" style="font-weight: bold"></i>
+                    </p>
+                    <p class="text project-description">
+                        A simple social media on the terminal. The users can create account,
+                        log in, find people and make friends with each other.
+                    </p>
+                </div>
+
+                <div class="center project-frame" onclick="openInfo(4)">
+                    <img class="project-photo" src="./images/tictactoe-screenshot.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Tic Tac Toe with Unbeatable Bot
+                        <i class="fab fa-java" style="font-weight: bold"></i>
+                    </p>
+                    <p class="text project-description">
+                        A Tic Tac Toe game that allows user to play with another player 
+                        or with an unbeatable AI.
+                    </p>
+                </div>
+
+                <div class="center project-frame" onclick="openInfo(5)">
+                    <img class="project-photo" src="./images/sudoku-screenshot.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Sudoku Puzzles Solver
+                        <i class="fab fa-java" style="font-weight: bold"></i>
+                    </p>
+                    <p class="text project-description">
+                        Solve a user-input Sudoku using backtracing algorithm.
+                    </p>
+                </div>
+
+                <div class="center project-frame" onclick="openInfo(6)">
+                    <img class="project-photo" src="./images/music-player.png">
+                    <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
+                        Music Player and Downloader
+                        <i class="fab fa-python"></i>
+                    </p>
+                    <p class="text project-description">
+                        A program that visualizes and estimates the value of Pi using the Monte Carlo method.
+                    </p>
+                </div>
             </div>
 
-            <div class="center project-frame" onclick="openInfo(2)">
-                <img class="project-photo" src="./images/sorting-screenshot.png">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Sorting Algorithms Visualizer 
-                    <i class="fab fa-python"></i>
-                </p>
-                <p class="text project-description">
-                    A visualizer for many sorting algorithms including Quick Sort, Insertion Sort, 
-                    Selection Sort, Bubble Sort, and Merge Sort.
-                </p>
+            <div class="center">
+                <button class="button bigger-text" style="width: 250px; margin-bottom: 100px; margin-top: 30px;"
+                    onclick="window.open('https://github.com/truongluan303','_blank')"> Show More </button>
             </div>
-
-            <div class="center project-frame" onclick="openInfo(3)">
-                <img class="project-photo" src="./images/social-media-screenshot.png">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Social Media on Terminal
-                    <i class="fab fa-java" style="font-weight: bold"></i>
-                </p>
-                <p class="text project-description">
-                    A simple social media on the terminal. The users can create account,
-                    log in, find people and make friends with each other.
-                </p>
-            </div>
-
-            <div class="center project-frame" onclick="openInfo(4)">
-                <img class="project-photo" src="./images/tictactoe-screenshot.png">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Tic Tac Toe with Unbeatable Bot
-                    <i class="fab fa-java" style="font-weight: bold"></i>
-                </p>
-                <p class="text project-description">
-                    A Tic Tac Toe game that allows user to play with another player 
-                    or with an unbeatable AI.
-                </p>
-            </div>
-
-            <div class="center project-frame" onclick="openInfo(5)">
-                <img class="project-photo" src="./images/sudoku-screenshot.png">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Sudoku Puzzles Solver
-                    <i class="fab fa-java" style="font-weight: bold"></i>
-                </p>
-                <p class="text project-description">
-                    Solve a user-input Sudoku using backtracing algorithm.
-                </p>
-            </div>
-
-            <div class="center project-frame" onclick="openInfo(6)">
-                <img class="project-photo" src="./images/music-player.png">
-                <p class="bigger-text" style="font-size: 38px; margin:20px 15px 0px 15px;">
-                    Music Player and Downloader
-                    <i class="fab fa-python"></i>
-                </p>
-                <p class="text project-description">
-                    A program that visualizes and estimates the value of Pi using the Monte Carlo method.
-                </p>
-            </div>
-        </div>
+        </section>
 
         <div id="proj-info">
             <div id="proj-buttons" style="margin: 30px 0px 0px 10px;">
@@ -184,11 +197,6 @@
             </div>
         </div>
 
-        <div class="center">
-            <button class="button bigger-text" style="width: 250px; margin-bottom: 100px; margin-top: 30px;">
-                <a href="https://github.com/truongluan303" target=_blank>Show More</a>
-            </button>
-        </div>
     </body>
 
 </html>

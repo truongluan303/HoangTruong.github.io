@@ -10,7 +10,7 @@ const PROJECT_TITLES = [
 const GITHUB_LINKS = [
   "https://github.com/truongluan303/Pathfinding-and-Sorting-Algorithms-Visualizer",
   "https://github.com/truongluan303/Pathfinding-and-Sorting-Algorithms-Visualizer",
-  "https://github.com/truongluan303/Simple-Social-Media-on-Terminal",
+  "https://github.com/allen-tran/Social-Network",
   "https://github.com/truongluan303/Tic-Tac-Toe-AI",
   "https://github.com/truongluan303/Sudoku_Solver",
   "https://github.com/truongluan303/Music-Player-and-Downloader"
@@ -55,6 +55,18 @@ function closeInfo() {
 
   // set the size to 0
   document.getElementById('proj-info').style.width = '0';
+}
+
+
+
+function openNav() {
+  document.getElementById('nav-bar').style.display = 'block';
+}
+
+
+
+function closeNav() {
+  document.getElementById('nav-bar').style.display = 'none';
 }
 
 
