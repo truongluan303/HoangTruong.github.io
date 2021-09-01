@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/a9cfebec94.js" crossorigin="anonymous"></script>
         <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
-    </head> 
+    </head>
 
 
     <body>
@@ -24,12 +24,13 @@
                 <a href="#projects" class="nav-link">PROJECTS</a>
                 <a href="mailto:truongluan303@gmail.com" class="nav-link">CONTACT</a>
             </div>
+            <i id="dark-mode-button" class="far fa-moon" onclick="changeMode()"></i>
         </nav>
 
-        <i class="fas fa-bars menu-button" onclick="openNav()"></i>
+        <i class="fas fa-bars" id="menu-button" onclick="openNav()"></i>
 
-        <section id="welcome">
-            <div class="center"><h1 class="headline shake">Hey! It's Luan <span class="wave"> 👋 </span></h1></div>
+        <section id="welcome" style="margin-bottom: 90px;">
+            <div class="center"><h1 id="headline" class="shake">Hey! It's Luan <span class="wave"> 👋 </span></h1></div>
 
             <div class="center">
                 <div class="center"><img class="avatar" src="./images/avatar.png"></div>
@@ -44,13 +45,13 @@
         
         
         <section id="about-me">
-            <p class="bigger-text center" style="margin-top: 90px; color: rgb(29, 15, 44);">About Me</p>
+            <h2 class="bigger-text center">About Me</h2>
             <div class="center">
                 <div class="self-intro"> 
                     <p class="text">
-                        I am a 19 year-old Computer Science student living in Silicone Valley.
+                        I am a 19-year-old Computer Science student living in Silicone Valley.
                         I graduated from De Anza College as a Mathematic major in 2021
-                        and transfered to San José State University to pursue a Computer Science degree.
+                        and transferred to San José State University to pursue a Computer Science degree.
                         <br>
                         I am open to any Software Engineering internship or externship roles that give me
                         opportunities to learn and gain hands-on experience.
@@ -73,7 +74,7 @@
 
 
         <section id="education" style="padding: 50px 0 30px 0;">
-            <p class="bigger-text center">Education</p>
+            <h2 class="bigger-text center">Education</h2>
             <div id="education-wraper">
                 <div id="school-photo-container">
                     <a href="https://www.sjsu.edu/" target="_blank"><img class="school"
@@ -104,7 +105,7 @@
         
 
         <section id="projects" style="padding: 50px 0 30px 0;">
-            <p class="bigger-text center" style="color: rgb(29, 15, 44)">Projects</p>
+            <h2 class="bigger-text center">Projects</h2>
 
             <div id="projects-wrapper" class="center">
                 <div class="center project-frame" onclick="openInfo(1)">
@@ -179,8 +180,8 @@
             </div>
 
             <div class="center">
-                <button class="button bigger-text" style="width: 250px; margin-bottom: 100px; margin-top: 30px;"
-                    onclick="window.open('https://github.com/truongluan303','_blank')"> Show More </button>
+                <button class="button bigger-text" style="width: 250px; margin-bottom: 100px; margin-top: 30px; color: rgb(0, 0, 0);
+                    background-color: rgb(255, 219, 121)" onclick="window.open('https://github.com/truongluan303','_blank')"> Show More </button>
             </div>
         </section>
 

@@ -14,7 +14,23 @@ body {
     background: linear-gradient(135deg, #e698b0, #fd9ba8, #8bccd6, #073a7c, #073a7c);
     background-size: 200% 200%;
     animation: gradient 7s ease infinite;
+    overflow: overlay;
 }
+
+body::-webkit-scrollbar {
+    width: 16px; 
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0, 0);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--dark-purple);   
+    border-radius: 20px;
+    border: 3px solid var(--light-orange); 
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -35,29 +51,36 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+h2 {
+    color: var(--purple);
+    text-shadow: 1px 1px 0px var(--black-purple), 2px 2px 0px var(--black-purple), 3px 3px 0px var(--black-purple), 
+                 4px 4px 0px var(--black-purple), 5px 5px 0px var(--black-purple);
+}
 
-.menu-button {
-    position: absolute;
+
+#menu-button {
+    position: fixed;
     font-size: 40px;
-    color: var(--light-orange);
-    background-color: var(--dark-purple);
-    padding: 5px 10px 5px 10px;
+    color: var(--dark-purple);
+    padding: 6px 10px 6px 10px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 10px;
     transition: 0.3s;
 }
-.menu-button:hover {
-    background-color: var(--purple);
+#menu-button:hover {
+    background-color: var(--light-orange);
+    color: var(--purple)
 }
 
 #nav-bar {
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     background: linear-gradient(var(--light-orange), var(--light-orange), rgb(255, 255, 255, 0));
-    padding: 12px 12px 100px 12px;
+    padding: 12px 8px 100px 8px;
     width: fit-content;
     height: fit-content;
     transition: 0.3s;
+    display: none;
 }
 
 .close-button {
@@ -69,6 +92,20 @@ a, a:hover, a:focus, a:active {
     color:var(--purple);
 }
 
+#dark-mode-button {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 3px;
+    font-size: 50px;
+    transition: 0.4s;
+}
+#dark-mode-button:hover {
+    background-color: var(--purple);
+    color: white;
+}
+
+
 #link-wrapper {
     width: auto;
     height: auto;
@@ -78,7 +115,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .nav-link {
-    padding-top: 10px;
+    padding-top: 25px;
     font-family: 'Anton', sans-serif;
     font-size: 20px;
     color: var(--dark-purple);
@@ -88,14 +125,17 @@ a, a:hover, a:focus, a:active {
     color: var(--purple)
 }
 
-.headline {
+#headline {
     margin-top: 70px;
     position: absolute;
     font-family: 'Otomanopee One', sans-serif;
     font-size: 80px;
     display: flex;
     justify-content: center;
-    color: var(--black-purple);
+    color: var(--purple);
+    text-shadow: 1px 1px 0px var(--black-purple), 2px 2px 0px var(--black-purple), 3px 3px 0px var(--black-purple), 
+                 4px 4px 0px var(--black-purple), 5px 5px 0px var(--black-purple), 6px 6px 0px var(--black-purple), 
+                 7px 7px 0px var(--black-purple), 8px 8px 0px var(--black-purple), 9px 9px 0px var(--black-purple);
 }
 .shake {
     animation-name: shaking;
@@ -218,12 +258,13 @@ a, a:hover, a:focus, a:active {
     border-width: 8px 0px 0px 0px;
     border-style: solid;
     border-radius: 0px 0px 40px 40px;
-    margin-top: 40px;
+    margin-top: 27px;
     margin-left: 10px;
     padding: 10px 0px 30px 20px;
     width: 400px;
     height: fit-content;
-    background-color: rgb(255, 255, 255, 0.4);
+    background-color: rgb(255, 255, 255, 0.7);
+    ;
 }
 
 #projects-wrapper {
@@ -353,7 +394,7 @@ a, a:hover, a:focus, a:active {
 
 @media (max-width: 900px) {
     .medias {
-        margin-top: 220px;
+        margin-top: 330px;
         width: 200px;
         height: 200px;
     }
@@ -365,7 +406,7 @@ a, a:hover, a:focus, a:active {
         font-size: 60px;
     }
     .medias {
-        margin-top: 230px;
+        margin-top: 330px;
         width: 170px;
         height: 170px;
         padding: 10px;
