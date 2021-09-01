@@ -317,7 +317,9 @@ h2 {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    direction: rtl;
 }
+
 
 .button {
     width: 130px;

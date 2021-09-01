@@ -106,7 +106,7 @@ function insertText(filepath, id) {
   let element = document.getElementById(id);
   fetch(filepath)
     .then(response => response.text())
-    .then(text => element.innerHTML += text);
+    .then(text => element.innerHTML = text);
 }
 
 
